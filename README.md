@@ -91,6 +91,5 @@ Multi-Algorithm-Task-Scheduler/
 ```
 
 ## 🛠️ Tools Used
--Java
--JavaFX
+Java, JavaFX
 
