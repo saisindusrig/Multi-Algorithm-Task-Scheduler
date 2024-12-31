@@ -49,22 +49,24 @@ javac -d bin src/**/*.java
 ## 📊 Scheduling Algorithms Overview
 
 ### 1️⃣ First Come First Serve (FCFS)
-🟢 Execution Order: Based on arrival time.
-⏱️ Handles idle time when no process is ready.
+- 🟢 Execution Order: Based on arrival time.
+- ⏱️ Handles idle time when no process is ready.
 
 ### 2️⃣ Round Robin (RR)
-🔄 Time Quantum: Fixed time slice per process.
-♻️ Processes re-enter the queue if unfinished.
+- 🔄 Time Quantum: Fixed time slice per process.
+- ♻️ Processes re-enter the queue if unfinished.
 
 ### 3️⃣ Shortest Job First (SJF)
-📉 Selection: The process with the shortest burst time is executed.
-🔒 Non-preemptive approach ensures fairness for shorter jobs.
+- 📉 Selection: The process with the shortest burst time is executed.
+- 🔒 Non-preemptive approach ensures fairness for shorter jobs.
 
 ### 4️⃣ Priority Scheduling
-📌 Selection: Based on priority level (lower value = higher priority).
-⚖️ Ties resolved by arrival time.
+- 📌 Selection: Based on priority level (lower value = higher priority).
+- ⚖️ Ties resolved by arrival time.
 
 ## 📂 Project Structure
+
+```
 Multi-Algorithm-Task-Scheduler/
 ├── src/
 │   ├── scheduler/
@@ -73,15 +75,20 @@ Multi-Algorithm-Task-Scheduler/
 │   │   │   ├── RR.java
 │   │   │   ├── SJF.java
 │   │   │   ├── PriorityScheduler.java
+│   │   │   ├── Scheduler.java        
 │   │   ├── models/
 │   │   │   ├── Process.java
-│   ├── Main.java
+│   │   ├── ui/
+│   │   │   ├── GanttChart.java
+│   ├── SchedulerMain.java
 ├── images/
 │   ├── fcfschart.png         
 │   ├── roundrobinchart.png           
 │   ├── sjfchart.png         
 │   ├── prioritychart.png     
 ├── README.md
+
+```
 
 ## 🛠️ Tools Used
 Java
